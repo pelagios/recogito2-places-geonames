@@ -43,6 +43,3 @@ def convertCities():
 
         cities.close()
         out.close()
-
-os.remove('geonames.jsonl')
-convertCities()
