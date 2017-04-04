@@ -6,7 +6,7 @@ def convertAdmin1():
 
     def convertAdmin1Row(row):
         geonamesId = row[3]
-        json = {
+        record = {
             'type': 'FeatureCollection',
             'uri': 'http://sws.geonames.org/' + geonamesId,
             'title': row[1],
@@ -16,7 +16,7 @@ def convertAdmin1():
         # if geonamesId in alternateNames:
         #    json['names'] = alternateNames[geonamesId]
 
-        return json
+        return record
 
 
     with open('data/admin1CodesASCII.txt', 'rt') as admin1, open('geonames.jsonl', 'a') as out:
