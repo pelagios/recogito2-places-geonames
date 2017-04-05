@@ -9,9 +9,9 @@ try:
 except OSError:
     pass
 
-loadNames()
+names = loadNames()
 print('Starting conversion...')
-#convertCountries()
-#convertAdmin1()
-#convertCities()
+convertCountries(names)
+convertAdmin1(names)
+convertCities(names)
 print('Done.')

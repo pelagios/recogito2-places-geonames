@@ -3,7 +3,7 @@ import gzip
 import json
 
 ### Converts cities TSV file
-def convertCities():
+def convertCities(alternateNames):
 
     def convertCitiesRow(row):
         if len(row) is not 19:
@@ -12,11 +12,11 @@ def convertCities():
             lat = float(row[4])
             lon = float(row[5])
 
-            # if row[0] in alternateNames:
-            #    names = alternateNames[row[0]]
-            # else:
-            namesFromCSV = filter(None, [ x.strip() for x in row[3].split(',') ])
-            names = [ { 'name': n } for n in namesFromCSV ]
+            if row[0] in alternateNames:
+                names = alternateNames[row[0]]
+            else:
+                namesFromCSV = filter(None, [ x.strip() for x in row[3].split(',') ])
+                names = [ { 'name': n } for n in namesFromCSV ]
 
             return {
                 'type': 'FeatureCollection',

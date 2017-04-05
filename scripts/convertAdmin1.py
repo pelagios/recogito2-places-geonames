@@ -2,7 +2,7 @@ import csv
 import json
 
 ### Converts admin1CodesASCII.txtfile
-def convertAdmin1():
+def convertAdmin1(alternateNames):
 
     def convertAdmin1Row(row):
         geonamesId = row[3]
@@ -13,8 +13,8 @@ def convertAdmin1():
             'country_code': row[0][:row[0].index('.')]
         }
 
-        # if geonamesId in alternateNames:
-        #    json['names'] = alternateNames[geonamesId]
+        if geonamesId in alternateNames:
+            record['names'] = alternateNames[geonamesId]
 
         return record
 
