@@ -1,2 +1,4 @@
 __pycache__
 geonames.jsonl
+data/alternateNames.*
+data/iso-languagecodes.txt
