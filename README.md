@@ -14,9 +14,9 @@ and uses the following source files:
 
 ### Releases
 
-| Version | Date       | # of Records | Notes           | |
-|---------|------------|--------------|-----------------|-|
-|0.1      | 2017-04-04 |              | Initial release | |
+| Version | Date       | # of Records | Notes                                       | |
+|---------|------------|--------------|---------------------------------------------|-|
+|0.1      | 2017-04-04 | 152,242      | Initial release, without Admin 1 boundaries | |
 
 ### Attribution & License
 
