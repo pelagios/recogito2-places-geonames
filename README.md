@@ -6,7 +6,7 @@ and uses the following source files:
 
 * `countryInfo.txt` - countries (without geometry)
 * `admin1CodesASCII.txt` - level 1 admin divisions (without geometry)
-* `cities1000.txt` - cities with a population > 1000 (point coordinates)
+* `cities1000.txt` - cities with a population > 1000 (with point coordinates)
 * `alternateNames.txt` - alternate names with language codes _(note: this file is not included
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
