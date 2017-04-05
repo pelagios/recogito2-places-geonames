@@ -16,7 +16,7 @@ and uses the following source files:
 
 | Version | Date       | # of Records | Notes                                       | |
 |---------|------------|--------------|---------------------------------------------|-|
-|0.1      | 2017-04-04 | 152,242      | Initial release, without Admin 1 boundaries | |
+|[0.1](https://github.com/pelagios/recogito2-places-geonames/releases/tag/0.1)| 2017-04-04 | 152,242      | Initial release, without Admin 1 boundaries |[geonames-20170404.jsonl.gz](https://github.com/pelagios/recogito2-places-geonames/releases/download/0.1/geonames-20170404.jsonl.gz)|
 
 ### Attribution & License
 
