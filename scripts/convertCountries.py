@@ -2,7 +2,7 @@ import csv
 import json
 
 ### Converts contryInfo.txt file
-def convertCountries(alternateNames, shapes):
+def convertCountries(alternateNames, shapes, wikidata):
 
     def convertCountriesRow(row):
         if len(row) is not 19:
@@ -24,6 +24,9 @@ def convertCountries(alternateNames, shapes):
             record['features'] = [{
                 'geometry': shapes[geonamesId]
             }]
+
+        if geonamesId in wikidata:
+            record['close_matches'] = wikidata[geonamesId]
 
         return record
 

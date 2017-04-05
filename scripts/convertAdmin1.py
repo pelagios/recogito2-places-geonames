@@ -2,7 +2,7 @@ import csv
 import json
 
 ### Converts admin1CodesASCII.txtfile
-def convertAdmin1(alternateNames, shapes):
+def convertAdmin1(alternateNames, shapes, wikidata):
 
     def convertAdmin1Row(row):
         geonamesId = row[3]
@@ -15,6 +15,9 @@ def convertAdmin1(alternateNames, shapes):
 
         if geonamesId in alternateNames:
             record['names'] = alternateNames[geonamesId]
+
+        if geonamesId in wikidata:
+            record['close_matches'] = wikidata[geonamesId]
 
         return record
 

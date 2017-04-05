@@ -3,12 +3,13 @@ import gzip
 import json
 
 ### Converts cities TSV file
-def convertCities(alternateNames):
+def convertCities(alternateNames, wikidata):
 
     def convertCitiesRow(row):
         if len(row) is not 19:
             print ('Invalid cities record: ' + str(row))
         else:
+            geonamesId = row[0]
             lat = float(row[4])
             lon = float(row[5])
 
@@ -18,9 +19,9 @@ def convertCities(alternateNames):
                 namesFromCSV = filter(None, [ x.strip() for x in row[3].split(',') ])
                 names = [ { 'name': n } for n in namesFromCSV ]
 
-            return {
+            record = {
                 'type': 'FeatureCollection',
-                'uri': 'http://sws.geonames.org/' + row[0],
+                'uri': 'http://sws.geonames.org/' + geonamesId,
                 'title': row[1],
                 'names': names,
                 'features': [{ 'geometry': { 'type': 'Point', 'coordinates': [ lon, lat ] } }],
@@ -29,6 +30,11 @@ def convertCities(alternateNames):
                 'population': int(row[14]),
                 'last_changed_at': row[18]
             }
+
+            if geonamesId in wikidata:
+                record['close_matches'] = wikidata[geonamesId]
+
+            return record
 
     with gzip.open('data/cities1000.txt.gz', 'rt') as cities, open('geonames.jsonl', 'a') as out:
         ctr = 0
