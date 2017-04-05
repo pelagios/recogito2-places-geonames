@@ -22,7 +22,6 @@ and uses the following source files:
 
 ### Attribution & License
 
-GeoNames dump files are licensed CC-BY 3.0.
-
-Wikidata-GeoNames concordances were extracted from Wikidata by [Michael Stoner](https://github.com/michaelstoner)
-as part of the [PastPlace](http://www.pastplace.org/) Global Historical Gazetteer project.
+GeoNames dump files are licensed CC-BY 3.0. Concordances between GeoNames and Wikidata were extracted 
+from Wikidata by [Michael Stoner](https://github.com/michaelstoner) as part of the
+[PastPlace](http://www.pastplace.org/) Global Historical Gazetteer project.
