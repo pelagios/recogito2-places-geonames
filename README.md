@@ -4,13 +4,13 @@ A gazetteer package for Recogito 2, using a subset of data from GeoNames. The pa
 on the material available through the [GeoNames Download Server](http://www.geonames.org/export/)
 and uses the following source files:
 
-* `countryInfo.txt` - countries
-* `admin1CodesASCII.txt` - level 1 admin divisions
-* `cities1000.txt` - cities with a population > 1000
+* `countryInfo.txt` - countries (without geometry)
+* `admin1CodesASCII.txt` - level 1 admin divisions (without geometry)
+* `cities1000.txt` - cities with a population > 1000 (point coordinates)
 * `alternateNames.txt` - alternate names with language codes _(note: this file is not included
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
-* `shapes_simplified_low.txt` - simplified country boundaries
+* `shapes_simplified_low.txt` - simplified country boundary shapes
 * The package additionally includes Wikidata links for 87,548 records, base on the file 
   `wikidata_geonames.csv`.
 
