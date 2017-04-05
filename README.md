@@ -10,6 +10,7 @@ and uses the following source files:
 * `alternateNames.txt` - alternate names with language codes _(note: this file is not included
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
+* `shapes_simplified_low.txt` - simplified country boundaries
 
 ### Releases
 

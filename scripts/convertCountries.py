@@ -2,7 +2,7 @@ import csv
 import json
 
 ### Converts contryInfo.txt file
-def convertCountries(alternateNames):
+def convertCountries(alternateNames, shapes):
 
     def convertCountriesRow(row):
         if len(row) is not 19:
@@ -20,10 +20,10 @@ def convertCountries(alternateNames):
         if geonamesId in alternateNames:
             record['names'] = alternateNames[geonamesId]
 
-        # if geonamesId in geometries:
-        #    json['features'] = [{
-        #        'geometry': geometries[geonamesId]
-        #    }]
+        if geonamesId in shapes:
+            record['features'] = [{
+                'geometry': shapes[geonamesId]
+            }]
 
         return record
 

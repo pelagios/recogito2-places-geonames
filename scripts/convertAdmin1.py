@@ -2,7 +2,7 @@ import csv
 import json
 
 ### Converts admin1CodesASCII.txtfile
-def convertAdmin1(alternateNames):
+def convertAdmin1(alternateNames, shapes):
 
     def convertAdmin1Row(row):
         geonamesId = row[3]

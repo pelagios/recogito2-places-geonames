@@ -63,6 +63,6 @@ def loadNames():
             if row[2] != 'link':
                 addName(row[1], row[2], row[3])
 
-    f.close()
-    print('Done.')
-    return alternateNames
+        f.close()
+        print('Done.')
+        return alternateNames
