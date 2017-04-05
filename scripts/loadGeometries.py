@@ -1,19 +1,12 @@
 import json
-import shapely
-from shapely.geometry import mapping, shape
 import gzip
 
 geometries = {}
 
-def loadGeometries():
+def loadCountries():
     with gzip.open('data/shapes_simplified_low.txt.gz', 'rt') as f:
         print('Loading country border shapes')
-
-        # Skip header
-        it = iter(f)
-        next(it)
-
-        for row in it:
+        for row in f:
             fields = row.split('\t')
             try:
                 geometries[fields[0].strip()] = json.loads(fields[1].strip())
@@ -22,4 +15,10 @@ def loadGeometries():
 
         f.close()
         print('Done.')
-        return geometries
+
+def loadGeometries():
+    loadCountries()
+
+    # TODO load Admin1 shapes
+    
+    return geometries
