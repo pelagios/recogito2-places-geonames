@@ -11,6 +11,8 @@ and uses the following source files:
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
 * `shapes_simplified_low.txt` - simplified country boundaries
+* The package additionally includes Wikidata links for XX,XXX records, base on the file 
+  `wikidata_geonames.csv`.
 
 ### Releases
 
@@ -21,3 +23,6 @@ and uses the following source files:
 ### Attribution & License
 
 GeoNames dump files are licensed CC-BY 3.0.
+
+Wikidata-GeoNames concordances were extracted from Wikidata by [Michael Stoner](https://github.com/michaelstoner)
+as part of the [PastPlace](http://www.pastplace.org/) Global Historical Gazetteer project.
