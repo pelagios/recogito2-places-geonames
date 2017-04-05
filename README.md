@@ -11,7 +11,7 @@ and uses the following source files:
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
 * `shapes_simplified_low.txt` - simplified country boundaries
-* The package additionally includes Wikidata links for XX,XXX records, base on the file 
+* The package additionally includes Wikidata links for 87,548 records, base on the file 
   `wikidata_geonames.csv`.
 
 ### Releases
