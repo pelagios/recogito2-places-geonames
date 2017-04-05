@@ -41,3 +41,5 @@ def convertCities(alternateNames):
 
         cities.close()
         out.close()
+
+        return ctr

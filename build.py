@@ -10,10 +10,14 @@ try:
 except OSError:
     pass
 
+ctr = 0
+
 names = loadNames()
 shapes = loadGeometries()
+
 print('Starting conversion...')
-convertCountries(names, shapes)
-convertAdmin1(names, shapes)
-convertCities(names)
+ctr += convertCountries(names, shapes)
+ctr += convertAdmin1(names, shapes)
+ctr += convertCities(names)
 print('Done.')
+print(str(ctr) + ' records total')

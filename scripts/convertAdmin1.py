@@ -28,5 +28,7 @@ def convertAdmin1(alternateNames, shapes):
             out.write(json.dumps(convertAdmin1Row(row), ensure_ascii=False) + '\n')
         print(' - ' + str(ctr) + ' records appended to geonames.jsonl')
 
-    admin1.close()
-    out.close()
+        admin1.close()
+        out.close()
+
+        return ctr

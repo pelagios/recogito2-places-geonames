@@ -39,3 +39,5 @@ def convertCountries(alternateNames, shapes):
 
         countries.close()
         out.close()
+
+        return ctr
