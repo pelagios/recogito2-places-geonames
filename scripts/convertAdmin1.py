@@ -16,11 +16,15 @@ def convertAdmin1(alternateNames, shapes, wikidata):
         if geonamesId in alternateNames:
             record['names'] = alternateNames[geonamesId]
 
+        if geonamesId in shapes:
+            record['features'] = [{
+                'geometry': shapes[geonamesId]
+            }]
+
         if geonamesId in wikidata:
             record['close_matches'] = wikidata[geonamesId]
 
         return record
-
 
     with open('data/admin1CodesASCII.txt', 'rt') as admin1, open('geonames.jsonl', 'a') as out:
         ctr = 0
