@@ -11,6 +11,9 @@ and uses the following source files:
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
 * `shapes_simplified_low.txt` - simplified country boundaries
+* In addition to GeoNames, `ne_admin1_states_provinces_simplified.geojson` contains simplified
+  geometries for admin level 1 regions from [Natural Earth](http://www.naturalearthdata.com/).
+  (Thanks to [@kgeographer](http://github.com/kgeographer) for pointing me there!)
 
 ### Releases
 
@@ -20,4 +23,4 @@ and uses the following source files:
 
 ### Attribution & License
 
-GeoNames dump files are licensed CC-BY 3.0.
+GeoNames dump files are licensed CC-BY 3.0. Natural Earth data is in the public domain.
