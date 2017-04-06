@@ -17,7 +17,7 @@ The following data sources are used in addition to GeoNames:
 * `ne_admin1_states_provinces_simplified.geojson` contains simplified geometries for admin level 1
   regions, derived from [Natural Earth](http://www.naturalearthdata.com/) (thanks to [@kgeographer](http://github.com/kgeographer) for pointing me there!)
 * Based on `wikidata_geonames.csv`, the gazetteer package includes concordances between GeoNames
-  and Wikidata for 87,548 records
+  and Wikidata for 87,555 records
 
 ### Releases
 
