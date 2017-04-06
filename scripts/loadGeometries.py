@@ -1,5 +1,5 @@
-import json
 import gzip
+import json
 
 geometries = {}
 

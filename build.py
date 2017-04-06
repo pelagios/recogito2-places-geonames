@@ -2,6 +2,7 @@ import os
 from scripts.loadNames import loadNames
 from scripts.loadGeometries import loadGeometries
 from scripts.loadWikidataIds import loadWikidataIds
+from scripts.convertContinents import convertContinents
 from scripts.convertCountries import convertCountries
 from scripts.convertAdmin1 import convertAdmin1
 from scripts.convertCities import convertCities
@@ -18,6 +19,7 @@ shapes = loadGeometries()
 wikidata = loadWikidataIds()
 
 print('Starting conversion...')
+ctr += convertContinents(names)
 ctr += convertCountries(names, shapes, wikidata)
 ctr += convertAdmin1(names, shapes, wikidata)
 ctr += convertCities(names, wikidata)

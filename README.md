@@ -23,12 +23,13 @@ The following data sources are used in addition to GeoNames:
 
 | Version | Date       | # of Records | Notes                                       | |
 |---------|------------|--------------|---------------------------------------------|-|
-|[0.1](https://github.com/pelagios/recogito2-places-geonames/releases/tag/0.1)| 2017-04-04 | 152,242      | Initial release, without Admin 1 boundaries |[geonames-20170404.jsonl.gz](https://github.com/pelagios/recogito2-places-geonames/releases/download/0.1/geonames-20170404.jsonl.gz)|
+|[0.1](https://github.com/pelagios/recogito2-places-geonames/releases/tag/0.1)| 2017-04-04 | 152,249      | Initial release, without Admin 1 boundaries |[geonames-20170404.jsonl.gz](https://github.com/pelagios/recogito2-places-geonames/releases/download/0.1/geonames-20170404.jsonl.gz)|
 
 ### Attribution & License
 
 * GeoNames dump files are licensed CC-BY 3.0
+* Natural Earth data is in the public domain
 * Concordances between GeoNames and Wikidata were extracted from Wikidata by [Michael
   Stoner](https://github.com/michaelstoner) as part of the [PastPlace](http://www.pastplace.org/)
   Global Historical Gazetteer project
-* Natural Earth data is in the public domain
+* World continent borders are from the [UCLA geoportal](http://gis.ucla.edu/geodata/dataset/continent_ln)
