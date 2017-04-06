@@ -4,16 +4,20 @@ A gazetteer package for Recogito 2, using a subset of data from GeoNames. The pa
 on the material available through the [GeoNames Download Server](http://www.geonames.org/export/)
 and uses the following source files:
 
-* `countryInfo.txt` - countries
-* `admin1CodesASCII.txt` - level 1 admin divisions
-* `cities1000.txt` - cities with a population > 1000
+* `countryInfo.txt` - countries (without geometry)
+* `admin1CodesASCII.txt` - level 1 admin divisions (without geometry)
+* `cities1000.txt` - cities with a population > 1000 (with point coordinates)
 * `alternateNames.txt` - alternate names with language codes _(note: this file is not included
   in this repository due to filesize restrictions; the script will download it from GeoNames
   automatically)_
-* `shapes_simplified_low.txt` - simplified country boundaries
-* In addition to GeoNames, `ne_admin1_states_provinces_simplified.geojson` contains simplified
-  geometries for admin level 1 regions from [Natural Earth](http://www.naturalearthdata.com/).
-  (Thanks to [@kgeographer](http://github.com/kgeographer) for pointing me there!)
+* `shapes_simplified_low.txt` - simplified country boundary shapes
+
+The following data sources are used in addition to GeoNames:
+
+* `ne_admin1_states_provinces_simplified.geojson` contains simplified geometries for admin level 1
+  regions, derived from [Natural Earth](http://www.naturalearthdata.com/) (thanks to [@kgeographer](http://github.com/kgeographer) for pointing me there!)
+* Based on `wikidata_geonames.csv`, the gazetteer package includes concordances between GeoNames
+  and Wikidata for 87,548 records
 
 ### Releases
 
@@ -23,4 +27,8 @@ and uses the following source files:
 
 ### Attribution & License
 
-GeoNames dump files are licensed CC-BY 3.0. Natural Earth data is in the public domain.
+* GeoNames dump files are licensed CC-BY 3.0
+* Concordances between GeoNames and Wikidata were extracted from Wikidata by [Michael
+  Stoner](https://github.com/michaelstoner) as part of the [PastPlace](http://www.pastplace.org/)
+  Global Historical Gazetteer project
+* Natural Earth data is in the public domain
