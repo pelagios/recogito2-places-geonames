@@ -32,4 +32,5 @@ The following data sources are used in addition to GeoNames:
 * Concordances between GeoNames and Wikidata were extracted from Wikidata by [Michael
   Stoner](https://github.com/michaelstoner) as part of the [PastPlace](http://www.pastplace.org/)
   Global Historical Gazetteer project
+* [Additional concordances](https://github.com/pelagios/recogito2-places-geonames/blob/master/data/concordances.csv.gz) were compiled by Florian Kräutli 
 * World continent borders are from the [UCLA geoportal](http://gis.ucla.edu/geodata/dataset/continent_ln)
