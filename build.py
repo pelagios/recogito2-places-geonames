@@ -1,7 +1,7 @@
 import os
 from scripts.loadNames import loadNames
 from scripts.loadGeometries import loadGeometries
-from scripts.loadWikidataIds import loadWikidataIds
+from scripts.loadConcordances import loadConcordances
 from scripts.convertContinents import convertContinents
 from scripts.convertCountries import convertCountries
 from scripts.convertAdmin1 import convertAdmin1
@@ -16,7 +16,7 @@ ctr = 0
 
 names = loadNames()
 shapes = loadGeometries()
-wikidata = loadWikidataIds()
+wikidata = loadConcordances()
 
 print('Starting conversion...')
 ctr += convertContinents(names)

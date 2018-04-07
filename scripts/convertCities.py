@@ -31,8 +31,8 @@ def convertCities(alternateNames, wikidata):
                 'last_changed_at': row[18]
             }
 
-            if geonamesId in wikidata:
-                record['close_matches'] = wikidata[geonamesId]
+            if ('http://sws.geonames.org/' + geonamesId) in wikidata:
+                record['close_matches'] = wikidata['http://sws.geonames.org/' + geonamesId]
 
             return record
 

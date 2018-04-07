@@ -21,8 +21,8 @@ def convertAdmin1(alternateNames, shapes, wikidata):
                 'geometry': shapes[geonamesId]
             }]
 
-        if geonamesId in wikidata:
-            record['close_matches'] = wikidata[geonamesId]
+        if ('http://sws.geonames.org/' + geonamesId) in wikidata:
+            record['close_matches'] = wikidata['http://sws.geonames.org/' + geonamesId]
 
         return record
 

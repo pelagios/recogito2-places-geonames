@@ -11,8 +11,8 @@ def convertContinents(alternateNames):
 
             geonamesId = feature['gn_id']
 
-            if geonamesId in alternateNames:
-                feature['names'] = alternateNames[geonamesId]
+            if ('http://sws.geonames.org/' + geonamesId) in alternateNames:
+                feature['names'] = alternateNames['http://sws.geonames.org/' + geonamesId]
 
             del feature['gn_id']
             out.write(json.dumps(feature, ensure_ascii=False) + '\n')
